@@ -1,0 +1,31 @@
+/* All imports must come first */
+@import "tailwindcss";
+
+/* Rest of your CSS rules come after imports */
+[dir="rtl"] .flex-row {
+  direction: rtl;
+}
+
+[dir="rtl"] .space-x-4 > * + * {
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Fix arrow directions in RTL */
+[dir="rtl"] .rotate-180 {
+  transform: rotate(0deg);
+}
+
+[dir="rtl"] .rotate-0 {
+  transform: rotate(180deg);
+}
+
+/* The rest of your existing CSS */
